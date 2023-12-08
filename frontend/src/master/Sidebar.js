@@ -16,24 +16,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/user/location">
-              <span class="icon-bg">
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              </span>
-              <span class="menu-title">Location</span>
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/user/category">
-              <span class="icon-bg">
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              </span>
-              <span class="menu-title">Category</span>
-            </Link>
-          </li>
-
-          <li class="nav-item">
-            <Link class="nav-link" to="/user/book/request">
+            <Link class="nav-link" to="/user/request">
               <span class="icon-bg">
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </span>
@@ -41,9 +24,9 @@ const Sidebar = () => {
             </Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/user/manage/books">
+            <Link class="nav-link" to="/user/books">
               <span class="icon-bg">
-                <i class="mdi mdi-table-large menu-icon"></i>
+                <i class="mdi mdi-account-box-outline menu-icon"></i>
               </span>
               <span class="menu-title">Manage Books</span>
             </Link>
@@ -51,10 +34,58 @@ const Sidebar = () => {
           <li class="nav-item">
             <Link class="nav-link" to="/user/users">
               <span class="icon-bg">
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              <i class="mdi mdi-account-settings menu-icon"></i>
+
               </span>
               <span class="menu-title">Manage User</span>
             </Link>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <span class="icon-bg">
+                <i class="mdi mdi-settings menu-icon"></i>
+              </span>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  {" "}
+                  <Link class="nav-link" onTouchCancelCapture="/user/roles">
+                    {" "}
+                    Manage Roles{" "}
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  {" "}
+                  <Link class="nav-link" to="user/course">
+                    {" "}
+                    Manage Course{" "}
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  {" "}
+                  <Link class="nav-link" to="/user/category">
+                    {" "}
+                    Manage Category{" "}
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  {" "}
+                  <Link class="nav-link" to="/user/location">
+                    {" "}
+                    Manage Location{" "}
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item sidebar-user-actions">
             <div class="user-details">
@@ -73,7 +104,6 @@ const Sidebar = () => {
               </div>
             </div>
           </li>
-
           <li class="nav-item sidebar-user-actions">
             <div class="sidebar-user-menu">
               <Link to="/" class="nav-link">
@@ -87,5 +117,4 @@ const Sidebar = () => {
     </>
   );
 };
-
 export default Sidebar;

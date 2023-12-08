@@ -1,25 +1,26 @@
 import React from "react";
 import face28 from '../assets/images/faces/face28.png'
-import logo from '../assets/images/logo.svg'
-import logoMini from '../assets/images/logo-mini.svg'
+import logo from '../assets/images/new-removebg-preview.png'
+import logoMini from '../assets/images/new-removebg-preview.png'
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.html">
-            <img src={logo} alt="logo" />
-          </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src={logoMini} alt="logo" />
-          </a>
+          <Link class="navbar-brand brand-logo  mt-4" to='/user/dashboard'>
+            <img src={logo} alt="logo" style={{"height":"100px"}} />
+          </Link>
+          <Link class="navbar-brand brand-logo-mini mt-4" to='/user/dashboard'>
+            <img src={logoMini} alt="logo" style={{"height":"100px"}} />
+          </Link>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button
             class="navbar-toggler navbar-toggler align-self-center"
             type="button"
             data-toggle="minimize"
+            data-target="#sidebar"
           >
             <span class="mdi mdi-menu"></span>
           </button>
