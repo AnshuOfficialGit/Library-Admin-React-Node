@@ -58,28 +58,28 @@ const Sidebar = () => {
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
                   {" "}
-                  <Link class="nav-link" onTouchCancelCapture="/user/roles">
+                  <Link class="nav-link" to="/settings/roles">
                     {" "}
                     Manage Roles{" "}
                   </Link>
                 </li>
                 <li class="nav-item">
                   {" "}
-                  <Link class="nav-link" to="user/course">
+                  <Link class="nav-link" to="/settings/course">
                     {" "}
                     Manage Course{" "}
                   </Link>
                 </li>
                 <li class="nav-item">
                   {" "}
-                  <Link class="nav-link" to="/user/category">
+                  <Link class="nav-link" to="/settings/category">
                     {" "}
                     Manage Category{" "}
                   </Link>
                 </li>
                 <li class="nav-item">
                   {" "}
-                  <Link class="nav-link" to="/user/location">
+                  <Link class="nav-link" to="/settings/location">
                     {" "}
                     Manage Location{" "}
                   </Link>

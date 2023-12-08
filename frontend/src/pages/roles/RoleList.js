@@ -95,7 +95,7 @@ const RoleList = () => {
                 </div>
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
-                  <Link to="/user/roles/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Role</Link>
+                  <Link to="/settings/roles/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Role</Link>
                   </div>
                 </div>
               </div>

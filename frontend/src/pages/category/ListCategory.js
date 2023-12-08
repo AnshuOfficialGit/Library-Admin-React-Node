@@ -95,7 +95,7 @@ const ListCategory = () => {
                 </div>
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
-                  <Link to="/category/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add category</Link>
+                  <Link to="/settings/category/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add category</Link>
                   </div>
                 </div>
               </div>

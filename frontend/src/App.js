@@ -35,12 +35,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
+
           <Route path="/user/dashboard" element={<Dashboard />}></Route>
-          <Route path="/user/location" element={<List />}></Route>
-          <Route path="/location/create" element={<Create />}></Route>
+
+          <Route path="/settings/location" element={<List />}></Route>
+          <Route path="settings/location/create" element={<Create />}></Route>
           <Route path="/location/edit:id" element={<Edit />}></Route>
-          <Route path="/user/category" element={<ListCategory />}></Route>
-          <Route path="/category/create" element={<CreateCategory />}></Route>
+
+          <Route path="/settings/category" element={<ListCategory />}></Route>
+          <Route path="settings/category/create" element={<CreateCategory />}></Route>
           <Route path="/category/edit:id" element={<EditCategory />}></Route>
 
           <Route path="/user/request" element={<RequestList />}></Route>
@@ -55,13 +58,13 @@ function App() {
           <Route path="/user/users/create" element={<UserCreate />}></Route>
           <Route path="/user/edit:id" element={<UserEdit />}></Route>
 
-          <Route path="/user/course" element={<CourseList />}></Route>
-          <Route path="/user/course/create" element={<CourseCreate />}></Route>
-          <Route path="/user/edit:id" element={<CourseEdit />}></Route>
+          <Route path="/settings/course" element={<CourseList />}></Route>
+          <Route path="/settings/course/create" element={<CourseCreate />}></Route>
+          <Route path="/settings/edit:id" element={<CourseEdit />}></Route>
 
-          <Route path="/user/roles" element={<RoleList />}></Route>
-          <Route path="/user/roles/create" element={<RoleCreate />}></Route>
-          <Route path="/user/edit:id" element={<RoleEdit />}></Route>
+          <Route path="/settings/roles" element={<RoleList />}></Route>
+          <Route path="/settings/roles/create" element={<RoleCreate />}></Route>
+          <Route path="/settings/edit:id" element={<RoleEdit />}></Route>
 
         </Routes>
       </BrowserRouter>

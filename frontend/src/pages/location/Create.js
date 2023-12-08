@@ -43,7 +43,7 @@ const Create = () => {
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
                     <Link
-                      to="user/location"
+                      to="settings/location"
                       class="btn btn-outline-danger btn-rounded btn-fw mb-1"
                     >
                       <i class="mdi mdi-reload btn-icon-prepend"></i> Location
@@ -81,7 +81,7 @@ const Create = () => {
 
                     <div className="text-right">
                       <Link
-                        to="/user/location"
+                        to="/settings/location"
                         className="btn btn-outline-danger btn-rounded btn-fw"
                       >
                         <i class="mdi mdi-reload btn-icon-prepend"></i> Cancel

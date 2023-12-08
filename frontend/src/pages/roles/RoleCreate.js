@@ -42,7 +42,7 @@ const RoleCreate = () => {
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
                     <Link
-                      to="/user/roles"
+                      to="/settings/roles"
                       class="btn btn-outline-danger btn-rounded btn-fw mb-1"
                     >
                       <i class="mdi mdi-reload btn-icon-prepend"></i> Roles
@@ -80,7 +80,7 @@ const RoleCreate = () => {
 
                     <div className="text-right">
                       <Link
-                        to="/user/roles"
+                        to="/settings/roles"
                         className="btn btn-outline-danger btn-rounded btn-fw"
                       >
                         <i class="mdi mdi-reload btn-icon-prepend"></i> Cancel

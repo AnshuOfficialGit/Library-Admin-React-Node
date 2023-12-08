@@ -95,7 +95,7 @@ const CourseList = () => {
                 </div>
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
-                  <Link to="/user/course/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Course</Link>
+                  <Link to="/settings/course/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Course</Link>
                   </div>
                 </div>
               </div>

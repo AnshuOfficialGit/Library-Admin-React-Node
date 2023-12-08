@@ -95,7 +95,7 @@ const List = () => {
                 </div>
                 <div class="col-xl-6">
                   <div class="d-flex justify-content-end align-items-end">
-                  <Link to="/location/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Location</Link>
+                  <Link to="/settings/location/create" class="btn btn-outline-primary btn-rounded btn-fw mb-1">Add Location</Link>
                   </div>
                 </div>
               </div>
